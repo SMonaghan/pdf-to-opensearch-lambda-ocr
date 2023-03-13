@@ -1,0 +1,17 @@
+{
+	"description" : "Allow Lambda Access to APIs",
+	"cluster_permissions" : [
+		"indices:data/write/bulk"
+	],
+	"index_permissions" : [
+		{
+		"index_patterns" : [
+			"document-index"
+		],
+		"allowed_actions" : [
+			"indices:admin/create",
+			"write"
+		]
+		}
+	]
+}
